@@ -1,0 +1,116 @@
+/*********************NAVIGATION************************/
+.navbar-default {
+    background-color: black;
+    border-color: #444;
+    z-index: 110;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #B5B5B5;
+    font-family: "Raleway", sans-serif;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #129CF3;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #B5B5B5;
+}
+.navbar-default .navbar-nav > .active>a, 
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus {
+    background-color: transparent;
+    color: #129CF3;
+} 
+/**********************header*************/
+.indiahead {
+    background-image: url(../images/teamind.png);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+#btn-rec {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color: #129FC3;
+}
+.btn-title {
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    background-color: black;
+    top: 0px;
+    padding: 5px 5px;
+}
+.btn-reading {
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    top: 0px;
+    padding: 5px 5px;
+}
+.recentimage {
+    position: relative; 
+    padding-bottom: 50px;
+}
+
+#body img {
+    height: 40%;
+    width: 80%;
+}
+#body h2{
+    color: #333;
+    text-transform: uppercase;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+#body p{
+    padding-top: 130px;
+    line-height: 25px;
+}
+.iframe {
+    float: right;
+    position: absolute;
+    top: 600px;
+    left: 900px;
+}
+/**************footer*************************/
+.footer {
+    background-color: #1a1a1a;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 3px solid #129CF3;
+}
+#copyright {
+    width: 50%;
+}
+#copyright p {
+    color: #8C8B8A;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#copyright p a {
+    text-decoration: none;
+    color: #129CF3;
+}
+.scroll-top {
+    text-align: right;
+}
+.scroll-top a {
+    background-color: #129CF3;
+    padding: 25px;
+}
+.scroll-top a i {
+    color: #fff;
+    font-size: 25px;
+}

@@ -1,0 +1,237 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+body{
+	font-family: sans-serif;
+}
+/*********************NAVIGATION************************/
+.navbar-default {
+    background-color: black;
+    border-color: #444;
+    z-index: 110;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #B5B5B5;
+    font-family: "Raleway", sans-serif;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #129CF3;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #B5B5B5;
+}
+.navbar-default .navbar-nav > .active>a, 
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus {
+    background-color: transparent;
+    color: #129CF3;
+} 
+/***************Header*******************************/
+.header {
+    background-image: url(../images/header-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top: 50px;
+    padding-bottom: 52px;
+}
+.header-overlay {
+    background-color: rgba(31,31,31,0.6);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.carousel {
+    left: -70px;
+    border-radius: 15px;
+    padding: 1px;
+    border: 1px solid white;
+}
+.carousel .item {
+  height: 450px;
+    
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+    border-radius: 15px;
+}
+.header h1{
+    color: white;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 20px;
+} 
+.header p {
+    color: white;
+    line-height: 25px;
+    text-align: justify;
+    font-size: 15px;    
+}
+.btn-readmore {
+    border: solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    float: right;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: black;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.btn-team {
+    border: solid white;
+background-color: black;
+}
+/*************india************************/
+.indian img{
+    width: 100%;
+    border-radius: 15px;
+}
+.indian {
+    background-image: url(../images/india-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.indian-overlay {
+    background-color: rgba(0,0,0,0.8);
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.indian h2{
+    color: white;
+    line-height: 20px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.indian p{
+    color: white;
+    line-height: 30px;
+    padding-top: 65px;
+}
+/******************Aus*******************************/
+.aus img{
+    width: 100%;
+    border-radius: 15px;
+}
+.aus {
+    background-image: url(../images/aus-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.aus h2{
+    color: white;
+    line-height: 20px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.aus p{
+    color: white;
+    line-height: 30px;
+    padding-top: 65px;
+}
+/*************************SA**********************************/
+.sa img{
+    width: 100%;
+    border-radius: 15px;
+}
+.sa {
+    background-image: url(../images/sa-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.sa h2{
+    color: white;
+    line-height: 20px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.sa p{
+    color: white;
+    line-height: 30px;
+    padding-top: 65px;
+}
+/*********************eng**********************************/
+.eng img{
+    width: 100%;
+    border-radius: 15px;
+}
+.eng {
+    background-image: url(../images/eng-back.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.eng h2{
+    color: white;
+    line-height: 20px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.eng p{
+    color: white;
+    line-height: 30px;
+    padding-top: 65px;
+}
+/******** seperate pages**************/
+.indiahead {
+    background-image: url(../images/india-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/**************footer*************************/
+.footer {
+    background-color: #1a1a1a;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 3px solid #129CF3;
+}
+#copyright {
+    width: 50%;
+}
+#copyright p {
+    color: #8C8B8A;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#copyright p a {
+    text-decoration: none;
+    color: #129CF3;
+}
+.scroll-top {
+    text-align: right;
+}
+.scroll-top a {
+    background-color: #129CF3;
+    padding: 25px;
+}
+.scroll-top a i {
+    color: #fff;
+    font-size: 25px;
+}

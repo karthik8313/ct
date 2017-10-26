@@ -1,0 +1,115 @@
+body {
+    background-image: url(../images/teamind.png);
+    
+
+}
+/*********************NAVIGATION************************/
+.navbar-default {
+    background-color: black;
+    border-color: #444;
+    z-index: 110;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #B5B5B5;
+    font-family: "Raleway", sans-serif;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #129CF3;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #B5B5B5;
+}
+.navbar-default .navbar-nav > .active>a, 
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus {
+    background-color: transparent;
+    color: #129CF3;
+} 
+/***********Main Body***************************/
+header {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+header img {
+    width: 100%;
+    height: 300px;
+}
+header h1{
+    font-size: 35px;
+    color: #129FC3;
+    font-weight: 500;
+}
+#hr1 {
+    border-top: 1px solid #129FC3;
+    width: 500px;
+}
+#hr2 {
+    position: relative;
+    border-top: 1px solid #129FC3;
+}
+header h4{
+    padding-top: 110px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 25px;
+    
+}
+.main_body p{
+    position: absolute;
+    padding-top: 80px;
+    font-style: italic;
+    color: darkred;
+    
+}
+.image_body {
+    padding-bottom: 50px;
+}
+/*********Main**********************/
+.main img{
+    float: left;
+    padding-right: 30px;
+}
+.main p{
+    font-size: 25px;
+    text-align: justify;
+}
+/**************footer*************************/
+.footer {
+    background-color: #1a1a1a;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 3px solid #129CF3;
+}
+#copyright {
+    width: 50%;
+}
+#copyright p {
+    color: #8C8B8A;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#copyright p a {
+    text-decoration: none;
+    color: #129CF3;
+}
+.scroll-top {
+    text-align: right;
+}
+.scroll-top a {
+    background-color: #129CF3;
+    padding: 25px;
+}
+.scroll-top a i {
+    color: #fff;
+    font-size: 25px;
+}
