@@ -1,6 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import india,Australia,South_Africa,England
 from django.views.generic.detail import DetailView
+from django.contrib.auth import(
+	login,
+	logout,
+	authenticate,
+	get_user_model,
+	)
+from . forms import userloginform,newuserform
 
 
 def index(request):
@@ -46,7 +53,6 @@ class indiaDetailView(DetailView):
 		context = super(indiaDetailView, self).get_context_data(**kwargs)
 		return context
 
-
 class australiaDetailView(DetailView):
 
 	model = Australia
@@ -54,7 +60,6 @@ class australiaDetailView(DetailView):
 	def get_context_data(self, **kwargs):
 		context = super(australiaDetailView, self).get_context_data(**kwargs)
 		return context
-
 
 class south_africaDetailView(DetailView):
 
@@ -71,3 +76,27 @@ class englandDetailView(DetailView):
 	def get_context_data(self, **kwargs):
 		context = super(englandDetailView, self).get_context_data(**kwargs)
 		return context
+
+def userlogin(request):
+	title ="User Login"
+	form = userloginform(request.POST or None)
+	if form.is_valid():
+		username = form.cleaned_data.get("username")
+		password = form.cleaned_data.get("password")
+		newuser = authenticate(username=username,password=password)
+		login(request,newuser)
+		return redirect('/admin')
+	return redirect('/admin')
+
+def newuser(request):
+	title="User Registration"
+	signup=newuserform(request.POST)
+	if signup.is_valid():
+		user=signup.save(commit=False)
+		password=signup.cleaned_data.get("password")
+		user.set_password(password)
+		user.save()
+		new_user=authenticate(username=user.username,password=password)
+		login(request,new_user)
+		return redirect('/')
+	return render(request,"index.html",{"signup":signup,"title":title})

@@ -14,5 +14,6 @@ urlpatterns = [
     url(r'^detail-australia/(?P<pk>[-\w]+)/$', australiaDetailView.as_view(), name='australia-detail'),
     url(r'^detail-south_africa/(?P<pk>[-\w]+)/$', south_africaDetailView.as_view(), name='south_africa-detail'),
     url(r'^detail-england/(?P<pk>[-\w]+)/$', englandDetailView.as_view(), name='england-detail'),
-
+    url(r'^oauth/', include('social_django.urls', namespace='social')),
+    url(r'^register', views.newuser),
 ]
